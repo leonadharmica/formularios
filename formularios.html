@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+        form: es el ingreso de informacion del usuario al servidor
+
+        CONTROLES DE FORMULARIO : 
+
+        input + select + textarea + button + fieldset 
+        
+        label + legend + option
+
+
+    -->
+    <form action="" method="">
+        <div>
+            <label for="nombre">Nombre</label>
+            <input type="text" placeholder="Ingrese su nombre..." id="nombre">
+        </div>
+        <div>
+            <label for="edad">Edad</label>
+            <input type="number" placeholder="Ingrese su edad..." id="edad">
+        </div>
+        <div>
+            <label for="email">email</label>
+            <input type="email" placeholder="Ingrese su email..." id="email">
+        </div>
+        <div>
+            <label for="password">password</label>
+            <input type="password" placeholder="Ingrese su contraseña..." id="password">
+        </div>
+        <div>
+            <label for="nac">Nacionalidad</label>
+            <select id="nac">
+                <option value="0">Elige una opcion</option>
+                <option value="ar">Argentina</option>
+                <option value="ve">Venezolana</option>
+                <option value="ch">China</option>
+            </select>
+        </div>
+        <div>
+            <label for="comentarios">Comentarios</label>
+            <textarea id="comentarios"></textarea>
+        </div>
+        <div>
+            <label for="masc">Masculino</label>
+            <input type="radio" id="masc" name="genero">
+            <label for="fem">Femenino</label>
+            <input type="radio" id="fem" name="genero">
+        </div>
+        <input type="submit">
+        <div>
+            <label for="tou">Acepto los Terminos y Condiciones</label>
+            <input type="checkbox" id="tou">
+        </div>
+        <!--<button>Enviar</button>-->
+    </form>
+    <script src="formularios.js"></script>
+</body>
+</html>
